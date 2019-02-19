@@ -20,6 +20,10 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>For recognising your voice, this application needs to access the microphone.</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>For recognising your voice, this application needs to access the Speech Recognition API.</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

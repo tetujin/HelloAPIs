@@ -15,6 +15,10 @@
 		4F4C37812218EAA4009AA13C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F4C377F2218EAA4009AA13C /* LaunchScreen.storyboard */; };
 		4F4C378C2218EAA4009AA13C /* HelloAPIsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C378B2218EAA4009AA13C /* HelloAPIsTests.swift */; };
 		4F4C37972218EAA4009AA13C /* HelloAPIsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C37962218EAA4009AA13C /* HelloAPIsUITests.swift */; };
+		4F4C37A6221BE6A1009AA13C /* STTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C37A5221BE6A1009AA13C /* STTViewController.swift */; };
+		4F4C37A8221BE6AC009AA13C /* TTSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C37A7221BE6AC009AA13C /* TTSViewController.swift */; };
+		4F4C37AA221BE6BB009AA13C /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C37A9221BE6BB009AA13C /* CameraViewController.swift */; };
+		4F4C37AC221BE6D5009AA13C /* WebAPIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C37AB221BE6D5009AA13C /* WebAPIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		4F4C37922218EAA4009AA13C /* HelloAPIsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloAPIsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F4C37962218EAA4009AA13C /* HelloAPIsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloAPIsUITests.swift; sourceTree = "<group>"; };
 		4F4C37982218EAA4009AA13C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F4C37A5221BE6A1009AA13C /* STTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STTViewController.swift; sourceTree = "<group>"; };
+		4F4C37A7221BE6AC009AA13C /* TTSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTSViewController.swift; sourceTree = "<group>"; };
+		4F4C37A9221BE6BB009AA13C /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		4F4C37AB221BE6D5009AA13C /* WebAPIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebAPIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,10 @@
 			children = (
 				4F4C37732218EAA2009AA13C /* AppDelegate.swift */,
 				4F4C37752218EAA2009AA13C /* ViewController.swift */,
+				4F4C37A5221BE6A1009AA13C /* STTViewController.swift */,
+				4F4C37A7221BE6AC009AA13C /* TTSViewController.swift */,
+				4F4C37A9221BE6BB009AA13C /* CameraViewController.swift */,
+				4F4C37AB221BE6D5009AA13C /* WebAPIViewController.swift */,
 				4F4C37772218EAA2009AA13C /* Main.storyboard */,
 				4F4C377D2218EAA4009AA13C /* Assets.xcassets */,
 				4F4C377F2218EAA4009AA13C /* LaunchScreen.storyboard */,
@@ -259,9 +271,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F4C37A6221BE6A1009AA13C /* STTViewController.swift in Sources */,
 				4F4C37762218EAA2009AA13C /* ViewController.swift in Sources */,
+				4F4C37A8221BE6AC009AA13C /* TTSViewController.swift in Sources */,
 				4F4C37742218EAA2009AA13C /* AppDelegate.swift in Sources */,
+				4F4C37AC221BE6D5009AA13C /* WebAPIViewController.swift in Sources */,
 				4F4C377C2218EAA2009AA13C /* HelloAPIs.xcdatamodeld in Sources */,
+				4F4C37AA221BE6BB009AA13C /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
