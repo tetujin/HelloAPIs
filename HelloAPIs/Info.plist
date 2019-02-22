@@ -20,8 +20,12 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>For tacking pictures, this application needs to access the camera module.</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>For recognising your voice, this application needs to access the microphone.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>For saving pictures from this app, this application needs to access Photos application.</string>
 	<key>NSSpeechRecognitionUsageDescription</key>
 	<string>For recognising your voice, this application needs to access the Speech Recognition API.</string>
 	<key>UILaunchStoryboardName</key>
@@ -35,8 +39,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>

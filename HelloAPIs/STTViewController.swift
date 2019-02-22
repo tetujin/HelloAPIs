@@ -33,6 +33,9 @@ class STTViewController: UIViewController, SFSpeechRecognizerDelegate {
         
         // Disable the record buttons until authorization has been granted.
         recordButton.isEnabled = false
+        
+        let gesture = UITapGestureRecognizer(target: self, action: #selector (self.didTapTextView(_:)))
+        self.textView.addGestureRecognizer(gesture)
     }
     
     override public func viewDidAppear(_ animated: Bool) {
@@ -67,6 +70,18 @@ class STTViewController: UIViewController, SFSpeechRecognizerDelegate {
         }
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        if let recognitionTask = recognitionTask {
+            recognitionTask.cancel()
+            self.recognitionTask = nil
+        }
+        recognitionRequest = nil
+    }
+    
+    @objc func didTapTextView(_ sender:UITapGestureRecognizer){
+        self.view.endEditing(true)
+    }
+    
     private func startRecording() throws {
         
         // Cancel the previous task if it's running.
@@ -77,7 +92,7 @@ class STTViewController: UIViewController, SFSpeechRecognizerDelegate {
         
         // Configure the audio session for the app.
         let audioSession = AVAudioSession.sharedInstance()
-        try audioSession.setCategory(.record, mode: .measurement, options: .duckOthers)
+        try audioSession.setCategory(.playAndRecord , mode: .measurement, options: .duckOthers)
         try audioSession.setActive(true, options: .notifyOthersOnDeactivation)
         let inputNode = audioEngine.inputNode
         
